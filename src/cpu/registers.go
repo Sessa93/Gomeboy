@@ -5,43 +5,43 @@ import (
 )
 
 type Registers struct {
-	a Int
-	b Int
-	c Int
-	d Int
-	e Int
-	h Int
-	l Int
+	a byte
+	b byte
+	c byte
+	d byte
+	e byte
+	h byte
+	l byte
 	
-	sp Int //Stack pointer
-	pc Int //Program counter
+	sp byte //Stack pointer
+	pc byte //Program counter
 }
 
-func (Registers r) getA() Int {
+func (Registers *r) getA() byte {
 	return r.a
 }
 
-func (Registers r) getB() Int {
+func (Registers *r) getB() byte {
 	return r.b
 }
 
-func (Registers r) getC() Int {
+func (Registers *r) getC() byte {
 	return r.c
 }
 
-func (Registers r) getD() Int {
+func (Registers *r) getD() byte {
 	return r.d
 }
 
-func (Registers r) getE() Int {
+func (Registers *r) getE() byte {
 	return r.e
 }
 
-func (Registers r) getH() Int {
+func (Registers *r) getH() byte {
 	return r.h
 }
 
-func (Registers r) getL() Int {
+func (Registers *r) getL() byte {
 	return r.l
 }
 
